@@ -1,0 +1,37 @@
+==========
+Single empty object
+==========
+root []
+---
+(object
+	(identifier))
+
+==========
+Single object
+==========
+root [
+	scripts[],
+	components[],
+	children[],
+]
+---
+(object
+	(identifier)
+	(scriptblock)
+	(componentblock)
+	(children))
+
+==========
+Object with child
+==========
+root [
+	children[
+		Object1[],
+	],
+]
+---
+(object
+	(identifier)
+	(children
+		(object
+			(identifier))))
